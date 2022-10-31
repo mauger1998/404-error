@@ -37,6 +37,7 @@ h2::after {
     content: "";
     inset:0;
     position:absolute;
+    z-index: 1000;
 }
 h2::before {
     background-color:#1e1e1e;
@@ -125,7 +126,7 @@ h4::after {
                 0.05em 0 0 rgba(255, 0, 0, .75),
                 -0.025em -0.05em 0 rgba(0, 255, 0, .75),
                 0.025em 0.05em 0 rgba(0, 0, 255, .75);
-    /* animation: glitch 500ms infinite; */
+    animation: glitch 750ms infinite;
 }
 
 .glitch  span {
@@ -134,13 +135,24 @@ h4::after {
     text-transform: uppercase;
     top:0;
     left:0;
-    text-shadow:
-                0.05em 0 0 rgba(255, 0, 0, .75),
-                -0.025em -0.05em 0 rgba(0, 255, 0, .75),
-                0.025em 0.05em 0 rgba(0, 0, 255, .75);
     color:white;
     font-family: monospace;
     letter-spacing: 0.5rem;
+}
+
+.glitch span:first-child {
+    animation: glitch 700ms infinite;
+    clip-path:polygon(0 0, 100% 0, 100% 45%, 0 30%);
+    transform: translate(-.05em, -0.025em);
+    opacity:0.8;
+}
+.glitch span:last-child {
+    animation: glitch 450ms infinite;
+    clip-path:polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+    transform: translate(.0125em, 0.025em);
+    opacity:0.8;
+
+    
 }
 
 

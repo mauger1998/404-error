@@ -9,11 +9,11 @@ body {
     justify-content: center;
     align-items: center;
     height:100vh;
-    background-image: url(kisspng-macbook-pro-laptop-mac-mini-imac-5ae75d63e5e110.3653034215251121639416.png);
     background-repeat: no-repeat;
     background-size: 100vh;
     background-position:center;
     z-index:-10000;
+    background-color:#161616;
     
 }
 main {
@@ -49,13 +49,13 @@ h2::after {
 }
 h2::before {
     background-color:#1e1e1e;
-    animation: typewriter 3s steps(37) 1s forwards;
+    animation: typewriter 4s steps(37) 1s forwards;
     animation-delay:1s;
 }
 h2::after {
     width: 0.125em;
     background-color:white;
-    animation: typewriter 3s steps(37) 1s forwards, blink 500ms steps(37) infinite;
+    animation: typewriter 4s steps(37) 1s forwards, blink 500ms steps(37) infinite;
     /* animation-delay:1s; */
 
 
@@ -104,7 +104,7 @@ h3::after {
 h3::before {
     background-color:#1c1c1c;
     animation: typewriter  1s steps(12) forwards;
-    animation-delay: 5.5s;
+    animation-delay: 6.5s;
 }
 
 body h4 {
@@ -116,7 +116,7 @@ body h4 {
     opacity:0;
     transform: translateY(3rem);
     animation: fadeInUp 2s forwards ease;
-    animation-delay:7s;
+    animation-delay:8s;
 }
 h4::before,
 h4::after {
@@ -127,7 +127,7 @@ h4::after {
 
 #arrow {
     animation:spin 0.5s;
-    animation-delay: 9s;
+    animation-delay: 10s;
 }
 
 @keyframes spin {
@@ -241,7 +241,7 @@ p::after {
 p::before {
     background-color:#191919;
     animation: typewriter  2s steps(1) forwards;
-    animation-delay: 5.25s;
+    animation-delay: 6.75s;
 }
 
 .classToAdd {

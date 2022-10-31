@@ -9,6 +9,12 @@ body {
     justify-content: center;
     align-items: center;
     height:100vh;
+    background-image: url(kisspng-macbook-pro-laptop-mac-mini-imac-5ae75d63e5e110.3653034215251121639416.png);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position:center;
+    z-index:-10000;
+    
 }
 main {
     height:100vh;
@@ -19,10 +25,12 @@ main {
     display:flex;
     justify-content: center;
     align-items:center;
+    align-self: flex-start;
     flex-direction: column;
     gap:2rem;
     background-color:#191919;
     display:none;
+
 }
 body h2 {
     color:white;
@@ -96,7 +104,7 @@ h3::after {
 h3::before {
     background-color:#1c1c1c;
     animation: typewriter  1s steps(12) forwards;
-    animation-delay: 4.5s;
+    animation-delay: 5.5s;
 }
 
 body h4 {
@@ -108,13 +116,24 @@ body h4 {
     opacity:0;
     transform: translateY(3rem);
     animation: fadeInUp 2s forwards ease;
-    animation-delay:6s;
+    animation-delay:7s;
 }
 h4::before,
 h4::after {
     content: "";
     inset:0;
     position:absolute;
+}
+
+#arrow {
+    animation:spin 0.5s;
+    animation-delay: 9s;
+}
+
+@keyframes spin {
+    100% {
+        rotate:360deg;
+    }
 }
 
 /* Glitch */
@@ -246,7 +265,7 @@ p::before {
     background-color:rgb(47, 45, 45);
     border-radius:1.5em;
     color:white;
-    margin:auto;
+    margin-bottom:6rem;
     position:relative;
     animation: shake 2s forwards;
     animation-delay: 5s;
